@@ -29,6 +29,6 @@ jobs:
     - name: Goto AuthServer Floder
       run: cd src/Marci.PathPlanningSystem.AuthServer;
     - name: Publish AuthServer
-      run: dotnet publish -c:Release -o:"../../build/AuthServer" -p:PublishProfile=FolderProfile
+      run: dotnet publish -c:Release -o:"../../build/AuthServer" -f:net8.0 -c:Release
       
     
