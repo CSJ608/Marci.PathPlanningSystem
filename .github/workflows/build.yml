@@ -34,5 +34,16 @@ jobs:
       run: |
         cd src/Marci.PathPlanningSystem.HttpApi.Host
         dotnet publish -c:Release -o:"../../build/HttpHost" -f:net8.0 --no-restore
+    - name: Upload AuthServer
+      uses: actions/upload-artifact@v3
+      with:
+        name: Marci.PathPlanningSystem.AuthServer
+        path: build/AuthServer
+    - name: Upload HttpHost
+      uses: actions/upload-artifact@v3
+      with:
+        name: Marci.PathPlanningSystem.HttpHost
+        path: build/HttpHost
+        
       
     
