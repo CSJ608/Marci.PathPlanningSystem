@@ -26,8 +26,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Publish
-      run: cd src\Marci.PathPlanningSystem.AuthServer; dotnet publish --no-restore --no-build -c:Release -o:"../../build/AuthServer"
-      shell: powershell
+    - name: Goto AuthServer Floder
+      run: cd src\Marci.PathPlanningSystem.AuthServer;
+    - name: Publish AuthServer
+      run: dotnet publish --no-restore --no-build -c:Release -o:"../../build/AuthServer"
       
     
