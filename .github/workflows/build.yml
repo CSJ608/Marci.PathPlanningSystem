@@ -29,10 +29,10 @@ jobs:
     - name: Publish AuthServer
       run: |
         cd src/Marci.PathPlanningSystem.AuthServer
-        dotnet publish -c:Release -o:"../../build/AuthServer" -f:net8.0 --no-build --no-restore
+        dotnet publish -c:Release -o:"../../build/AuthServer" -f:net8.0 --no-restore
     - name: Publish HttpHost
       run: |
         cd src/Marci.PathPlanningSystem.HttpApi.Host
-        dotnet publish -c:Release -o:"../../build/HttpHost" -f:net8.0 --no-build --no-restore
+        dotnet publish -c:Release -o:"../../build/HttpHost" -f:net8.0 --no-restore
       
     
